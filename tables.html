@@ -12,16 +12,122 @@
                 <li><a href="tables.html" target="_self">Tables</a></li>
                 <li><a href="index.html" target="_self">Home</a></li>
                 <li><a href="forms.html" target="_self">Forms</a></li>
-                <li><a href="media.html" target="_self"></a></li>
+                <li><a href="media.html" target="_self">Media</a></li>
+
             </ul>
         </nav>
-
+        <caption>Page 1</caption>
+        <h1>Tables</h1>
     </header>
     <main>
-
+        <!-- Div container for building tables with fixed size-->
+        <div id="table1">
+            <!-- Table with fixed size-->
+            <table style="width: 1000px;">
+                <h2>Table with absolute width values</h2>
+                <!-- Table Header -->
+                 <thead>
+                    <!-- Table row for the header -->
+                     <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                     </tr>
+                 </thead>
+                 <!--Table body-->
+                 <tbody>
+                    <!--Table row for the body -->
+                    <tr>
+                        <!-- Table data cell -->
+                         <td>Data 1.1</td>
+                         <td>Data 1.2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 2.1</td>
+                        <td>Data 2.2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3.1</td>
+                        <td>Data 3.2</td>
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+        <hr>
+        <!--Div container for building responsive -->
+        <div id="table2">
+            <!-- Responsive table that adjusts its width based on its parent container's width -->
+             <table style="width: 100%;">
+                <h2>Responsive table using relative width values</h2>
+                <!-- Table header -->
+                 <thead>
+                    <!-- Table row for the header -->
+                     <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                     </tr>
+                 </thead>
+                 <!-- Table body -->
+                  <tbody>
+                     <!-- Table row for the body -->
+                      <tr>
+                        <!-- Table data cell -->
+                         <td>Data 1.1</td>
+                         <td>Data 1.2</td>
+                      </tr>
+                      <tr>
+                        <td>Data 2.1</td>
+                        <td>Data2.2</td>
+                      </tr>
+                      <tr>
+                        <td>Data 3.1</td>
+                        <td>Data 3.2</td>
+                      </tr>
+                  </tbody>
+             </table>
+        </div>
+        <hr>
+        <!-- Div container for building responsive tables with merged cells-->
+        <div id="table3">
+            <!-- Responsive table with merged cells -->
+             <table style="width: 100%;">
+                <h2>Responsive table with merged cells</h2>
+                <!-- Tables header -->
+                 <thead>
+                    <!-- Table row for the header -->
+                     <tr> 
+                        <th rowspan="2">Header 1</th> <!-- Header Cell that spans two rows vertically -->
+                        <th colspan="2">Header 2</th> <!-- Header cell that spans two columns horizontally -->
+                     </tr>
+                     <tr>
+                        <th>Sub-header 1</th>
+                        <th>Sub-header 2</th>
+                     </tr>
+                 </thead>
+                 <!-- Table Body -->
+                  <tbody>
+                    <!-- Table row for the body -->
+                     <tr>
+                        <!-- Table data cell -->
+                         <td>Data 1.1</td>
+                         <td>Data 1.2</td>
+                         <td>Data 1.3</td>
+                     </tr>
+                     <tr>
+                        <td>Data 2.1</td>
+                        <td>Data 2.2</td>
+                        <td>Data 2.3</td>
+                     </tr>
+                     <tr>
+                        <td>Data 3.1</td>
+                        <td>Data 3.2</td>
+                        <td>Data 3.3</td>
+                     </tr>
+                  </tbody>
+             </table>
+        </div>
     </main>
     <footer>
-
+        <p>&copy; Copyright 2024 Brianna Ordaz Production</p>
     </footer>
 </body>
 </html>
